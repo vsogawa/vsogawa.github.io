@@ -1,0 +1,106 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+  }
+
+#smallScreenIcons, .smallScreen {
+    display: none;
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 815px) and (min-width: 415px){
+
+}
+
+@media only screen and (max-width: 415px) {
+    
+    * {
+        text-align: center;
+    }
+
+    .smallScreen {
+        display: block;
+    }
+
+    #carouselPlaceholder {
+        width: 300px;
+    }
+
+    #bigScreenIcons {
+        display: none;
+    }
+
+    #aboveFooter {
+        margin-bottom: 100px;
+    }
+
+    #smallScreenIcons {
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: gray;
+        text-align: center;
+        height: 80px;
+    }   
+
+    #smallScreenIcons .contactIcon {
+        margin: 10px;
+    } 
+
+    #logo {
+        margin: 80px 0 10px 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    #leftColumn p {
+        margin: 5px 0 90px 0;
+    }
+
+    #rightColumn {
+        padding: 15px;
+    }
+
+    ul li {
+        text-align: left;
+        margin-top: 8px;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-weight: 700;
+        display: block;
+        text-align: left;          
+    }
+
+    .location {
+        font-style: italic;
+        display: block;
+        text-align: left;          
+    }
+
+    .dates {
+        display: block;
+        text-align: left;        
+    }
+
+    .resume {
+        display: block;
+        text-align: left;  
+        font-size: 19px;        
+    }
+}
