@@ -3,8 +3,8 @@
 	function init(item) {
 		var items = item.querySelectorAll('li'),
         current = 0,
-        autoUpdate = true,
-        timeTrans = 4000;
+        autoUpdate = false,
+        timeTrans = 40000;
         
 		//create nav
 		var nav = document.createElement('nav');
@@ -138,4 +138,4 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-$("#backToTop").click(topFunction);
+$("#backToTop").on("mousedown", topFunction);
