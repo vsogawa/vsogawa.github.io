@@ -55,17 +55,6 @@
 			counter.firstChild.textContent = current + 1;
 		}
     
-    item.addEventListener('mouseenter', function() {
-			autoUpdate = false;
-		});
-
-		item.addEventListener('mouseleave', function() {
-			autoUpdate = true;
-		});
-
-		setInterval(function() {
-			if (autoUpdate) navigate('right');
-		},timeTrans);
     
 		prevbtn.addEventListener('click', function() {
 			navigate('left');

@@ -270,8 +270,29 @@ nav {
         padding: 7px 0 7px 0;    
     }
 
-    .test {
-        border: 3px solid red;
+    .commentary {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        display: inline-block;
+        height: 95px;
+        bottom: 55px;
+        width: 100%;
     }
+
+    .commentary p:first-child {
+        color: white;
+        text-align: left;
+        margin: 8px 0 0 10px;
+        font-weight: 700;
+        font-size: 19px;
+        font-style: italic;
+    }
+
+    .commentary p:last-child {
+        color: white;
+        text-align: left;
+        margin: 0 0 0 10px;
+        width: 95%;
+    }    
 
 }
