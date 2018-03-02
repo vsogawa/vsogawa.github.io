@@ -112,6 +112,8 @@ h1 {
 
 body {
     position: relative;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .picContainer {
