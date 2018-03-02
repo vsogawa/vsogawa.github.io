@@ -4,7 +4,18 @@
     text-align: center;
   }
 
-h1, h2 {
+body {
+    position: relative;
+}
+
+/*////////////////Header Styles (everything above projects 
+divider plus contact icons)/////////////*/
+
+h1 {
+    margin-right: 15px;
+    margin-top: 50px;
+    font-size: 38px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -12,16 +23,8 @@ h1, h2 {
     margin-top: 50px;
 }
 
-li:last-child {
-    margin-bottom: 30px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
 .fa {
-    font-size: 40px;    
+    font-size: 40px;
     color: gray;
 }
 
@@ -31,32 +34,12 @@ li {
     font-size: 20px;
 }
 
-.projectdescription {
-    margin-bottom: 45px;
-    text-align: justify;
-    max-width: 75%;   
-    display: inline-block;     
-}
-
-h1 {
-    margin-right: 15px;
-    margin-top: 50px;
-    font-size: 38px;
-    margin-bottom: 20px;
-}
-
-.title {
-    font-size: 1.2em;
-    font-weight: 700;
-    color: #36C936
-}
-
 .recolor {
-    font-size: 14px;  
+    font-size: 14px;
     color: #36C936;
     position: relative;
     width: 160px;
-    margin: auto;                
+    margin: auto;
 }
 
 .fa-paint-brush {
@@ -66,36 +49,17 @@ h1 {
 }
 
 #colorpicker {
-    z-index: 1;  
+    z-index: 1;
     width: 160px;
-    opacity: 0; 
-    cursor: pointer;  
-    position: absolute; 
-    left: -3px; 
-    top: -3px;        
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -3px;
+    top: -3px;
 }
 
 .icon {
     margin: 30px 10px 30px 10px;
-}
-
-#backToTop {
-    text-decoration: none;
-    color: #36C936;
-    cursor: pointer;
-}
-
-#backToTop:hover {
-    color: lightgray;
-}
-
-.divider {
-    background-color: #D6D6D6;
-    height: 2px;
-    border-radius: 10%;
-    width: 100%;
-    margin: 10px 30px 10px 0;
-    background: linear-gradient(to right, #D6D6D6, #D6D6D6, #36C936);
 }
 
 .fa-envelope-square:hover {
@@ -110,8 +74,21 @@ h1 {
     color: purple;
 }
 
-body {
-    position: relative;
+/*///////////Projects section/////////////*/
+
+.divider {
+    background-color: #D6D6D6;
+    height: 2px;
+    border-radius: 10%;
+    width: 100%;
+    margin: 10px 30px 10px 0;
+    background: linear-gradient(to right, #D6D6D6, #D6D6D6, #36C936);
+}
+
+#projectsHeader {
+    color: #36C936;
+    font-size: 32px;
+    text-transform: uppercase;
 }
 
 .picContainer {
@@ -125,59 +102,6 @@ body {
 .projectImage {
     width: 100%;
 }
-
-li, ul, span {
-    text-align: left;
-}   
-
-li {
-    color: #36C936;
-}
-
-span {
-    color: black;
-}
-
-.resume {
-    font-style: italic;
-}
-
-.location, .dates {
-}
-
-#footer {
-    z-index: -1;
-    position: absolute;
-    left:0;
-    bottom: -50px;
-    width: 100%;
-    margin: 0;
-    opacity: 0.2;
-}
-
-#copytext {
-    position: absolute;
-    right: 20px;
-    bottom: -50px;
-    font-size: 12px;
-    color: gray;
-}
-
-#resume {
-    text-align: left;
-    margin-left: 20px; 
-    margin-right: 5px;
-}
- 
-#projectsHeader {
-    color: #36C936;
-    font-size: 32px;        
-}
-
-#resumeHeader {
-    color: #36C936;     
-    font-size: 32px;
-} 
 
 .titleShadowBox {
     position: absolute;
@@ -203,6 +127,85 @@ span {
     text-align: left;
 }
 
+.projectdescription {
+    margin-bottom: 45px;
+    text-align: justify;
+    max-width: 75%;
+    display: inline-block;
+}
+
+/*//////////////////Resume section///////////////////*/
+
+#resumeHeader {
+    color: #36C936;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+li, ul, span {
+    text-align: left;
+}
+
+li {
+    color: #36C936;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 30px;
+}
+
+span {
+    color: black;
+}
+
+#resume {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #36C936
+}
+
+.resume {
+    font-style: italic;
+}
+
+/*///////////Post Content//////////////////*/
+
+#backToTop {
+    text-decoration: none;
+    color: #36C936;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    color: lightgray;
+}
+
+#footer {
+    z-index: -1;
+    position: absolute;
+    left:0;
+    bottom: -50px;
+    width: 100%;
+    margin: 0;
+    opacity: 0.2;
+}
+
+#copytext {
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+    font-size: 12px;
+    color: gray;
+}
+
+
 @media only screen and (min-width: 750px) {
 
     #container {
@@ -211,12 +214,11 @@ span {
         grid-template-rows: 100px, 100px, 800px, 100px, 900px;
         align-items: start;
         max-width: 1600px;
-        margin: auto;              
+        margin: auto;
     }
 
-    #backToTop {
-        display: none;
-    }
+/*////////////////SMALL VIEWPORT WIDTH Header Styles 
+(everything above projects divider plus contact icons)/////////////*/
 
     #logo {
         grid-column: 1;
@@ -231,52 +233,6 @@ span {
         margin: 0 3px 0 3px;
     }
 
-    .recolor {
-        grid-column: 1;
-        grid-row: 1; 
-        font-size: 14px;  
-        color: #36C936;
-        align-self: end;
-        justify-self: start;   
-        margin-left: 180px;
-        margin-bottom: 4px;         
-    }
-
-    .fa-paint-brush {
-        font-size: 14px;
-        color: #36C936;
-        margin-right: 4px;
-    }
-
-    #colorpicker {
-        grid-column: 1;
-        grid-row: 1; 
-        align-self: end;
-        justify-self: start;   
-        z-index: 1;  
-        margin: 0 0 0 10px;        
-        width: 140px;
-        opacity: 0; 
-        cursor: pointer;            
-    }
-
-    #name {
-        grid-column: 2 / 4;
-        grid-row: 1;
-    }
-
-    #name p {
-        text-align: right;
-        margin: 0 15px 5px 0;
-    }
-
-    h1 {
-        text-align: right;
-        margin-right: 15px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
     #iconList {
         margin-right: 15px;
         margin-top: -15px;
@@ -289,12 +245,60 @@ span {
         grid-row: 2;
     }
 
+    .recolor {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 14px;
+        color: #36C936;
+        align-self: end;
+        justify-self: start;
+        margin-left: 180px;
+        margin-bottom: 4px;
+    }
+
+    .fa-paint-brush {
+        font-size: 14px;
+        color: #36C936;
+        margin-right: 4px;
+    }
+
+    #colorpicker {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+        justify-self: start;
+        z-index: 1;
+        margin: 0 0 0 10px;
+        width: 140px;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    h1 {
+        text-align: right;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #name {
+        grid-column: 2 / 4;
+        grid-row: 1;
+    }
+
+    #name p {
+        text-align: right;
+        margin: 0 15px 5px 0;
+    }
+
+/*///////////SMALL VIEWPORT WIDTH Projects section/////////////*/
+
     #projectsHeader {
         grid-column: 1 / 4;
         grid-row: 2;
         text-align: left;
         margin-left: 20px;
-        margin-top: 10px;        
+        margin-top: 10px;
     }
 
     #project1 {
@@ -305,29 +309,31 @@ span {
     #project2 {
         grid-column: 2;
         grid-row: 3;
-    }    
+    }
 
     #project3 {
         grid-column: 3;
         grid-row: 3;
-    }  
+    }
 
     .projectdescription {
         margin-bottom: 0;
     }
 
+/*/////////////SMALL VIEWPORT WIDTH Resume section///////////////*/
+
     #resumeHeader {
         grid-column: 1 / 4;
         grid-row: 4;
         text-align: left;
-        margin-left: 20px;   
-    }   
+        margin-left: 20px;
+    }
 
     #resume {
         grid-column: 1 / span 3;
         grid-row: 5;
-        margin-right: 20px; 
-        max-width: 850px;              
+        margin-right: 20px;
+        max-width: 850px;
     }
 
     .location, .dates {
@@ -343,4 +349,9 @@ span {
         display: none;
     }
 
+/*///////////SMALL VIEWPORT WIDTH Post Content//////////////////*/
+
+    #backToTop {
+        display: none;
+    }
 }

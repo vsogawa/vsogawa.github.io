@@ -14,6 +14,5 @@ $("#colorpicker").change(function(){
 	$(".colorChange").css("color", color);
 	$("hr").css("border", `1px solid ${color}`);
 	$("li").css("color", color);	
-	$(".divider").css("background", `linear-gradient(to right, #D6D6D6, #D6D6D6, ${color})`)    
+	$(".divider").css("background", `linear-gradient(to right, #D6D6D6, #D6D6D6, ${color})`)
 })
-
