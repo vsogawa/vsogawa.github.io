@@ -1,298 +1,339 @@
 * {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+    text-align: center;
   }
-
-#smallScreenIcons, .smallScreen {
-    display: none;
-}
-
 
 h1, h2 {
     text-transform: uppercase;
 }
 
+#logo {
+    margin-top: 50px;
+}
+
+li:last-child {
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.fa {
+    font-size: 40px;    
+    color: gray;
+}
+
+#name p {
+    margin: 0 15px 5px 0;
+    color: #36C936;
+    font-size: 20px;
+}
+
+h1 {
+    margin-right: 15px;
+    margin-top: 50px;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #36C936
+}
+
+.recolor {
+    font-size: 14px;  
+    color: #36C936;
+    position: relative;
+    width: 160px;
+    margin: auto;                
+}
+
+.fa-paint-brush {
+    font-size: 14px;
+    color: #36C936;
+    margin-right: 7px;
+}
+
+#colorpicker {
+    z-index: 1;  
+    width: 160px;
+    opacity: 0; 
+    cursor: pointer;  
+    position: absolute; 
+    left: -3px; 
+    top: -3px;        
+}
+
+.icon {
+    margin: 30px 10px 30px 10px;
+}
 
 #backToTop {
-    display: none;
-}
-
-hr {
-    display: none;
-}
-
-/* Slider Style
---------------------------------------*/
-.cd-slider {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin-bottom: 5rem;
-}
-.cd-slider li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    transition: visibility 0s 1s;
-  will-change: visibility;
-}
-.image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
-    clip: rect(0, 80rem, 50rem, 80rem);
-    transition: clip 0.3s cubic-bezier(0.99, 0.01, 0.45, 0.9) 0.1s;
-  will-change: clip;
-}
-
-/* Current Slide 
--------------------------------------*/
-li.current {
-    visibility: visible;
-    transition-delay: 0s;
-}
-li.current .image {
-    clip: rect(0, 80rem, 50rem, 0);
-}
-
-/* Prev Slide 
-------------------------------------*/
-li.prev_slide .image {
-    clip: rect(0, 0, 50rem, 0);
-}
-nav {
-    position: absolute;
-    bottom: 0;
-    background: #fff;
-    z-index: 0;
-    width: 100%;
-}
-.prev, .next, .counter {
-    vertical-align: middle;
-}
-.prev, .next {
-    position: relative;
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    margin: 15px;
-    border: 0;
+    text-decoration: none;
+    color: #36C936;
     cursor: pointer;
-    background: transparent;
 }
 
-.prev {
-    background-image: url(https://vsogawa.github.io/icons8-left-26.png);
+#backToTop:hover {
+    color: lightgray;
 }
 
-.next {
-    background-image: url(https://vsogawa.github.io/icons8-right-26.png);
+.divider {
+    background-color: #D6D6D6;
+    height: 2px;
+    border-radius: 10%;
+    width: 100%;
+    margin: 10px 30px 10px 0;
+    background: linear-gradient(to right, #D6D6D6, #D6D6D6, #36C936);
 }
 
-.counter {
+.fa-envelope-square:hover {
+    color: orange;
+}
+
+.fa-linkedin-square:hover {
+    color: navy;
+}
+
+.fa-github-square:hover {
+    color: purple;
+}
+
+body {
+    position: relative;
+}
+
+.picContainer {
+    max-width: 90%;
+    max-height: 250px;
+    overflow: hidden;
     display: inline-block;
-    font-size: 25px;
-    font-family: serif;
+    position: relative;
+}
+
+.projectImage {
+    width: 100%;
+}
+
+li, ul, span {
+    text-align: left;
+}   
+
+li {
+    color: #36C936;
+}
+
+span {
+    color: black;
+}
+
+.resume {
     font-style: italic;
 }
-.counter span:last-child::before {
-    content: '/';
-    margin: 0 1rem;
+
+.location, .dates {
 }
 
-
-@media only screen and (max-width: 815px) and (min-width: 415px){
-
-    hr {
-    display: block;
-    }
-
+#footer {
+    z-index: -1;
+    position: absolute;
+    left:0;
+    bottom: -50px;
+    width: 100%;
+    margin: 0;
+    opacity: 0.2;
 }
 
-@media only screen and (max-width: 415px) {
-    
-    * {
-        text-align: center;
-    }
+#copytext {
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+    font-size: 12px;
+    color: gray;
+}
 
-    .smallScreen {
-        display: block;
-    }
+#resume {
+    text-align: left;
+    margin-left: 20px; 
+    margin-right: 5px;
+}
+ 
+#projectsHeader {
+    color: #36C936;
+    font-size: 32px;        
+}
 
-    #carouselPlaceholder {
-        width: 300px;
-    }
+#resumeHeader {
+    color: #36C936;     
+    font-size: 32px;
+} 
 
-    #bigScreenIcons {
-        display: none;
-    }
+.titleShadowBox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.7);
+}
 
-    #aboveFooter {
-        margin-bottom: 100px;
-    }
+.projectTitle {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    max-width: 100%;
+    z-index: 2;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-align: left;
+}
 
-    #smallScreenIcons {
-        display: block;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: gray;
-        text-align: center;
-        height: 80px;
-    }   
+@media only screen and (min-width: 750px) {
 
-    #smallScreenIcons .contactIcon {
-        margin: 10px;
-        vertical-align: middle;
-    } 
-
-    #logo {
-        margin: 80px 0 10px 0;
-    }
-
-    h1 {
-        margin: 0;
-    }
-
-    #leftColumn p {
-        margin: 5px 0 70px 0;
-    }
-
-    #rightColumn {
-        padding: 15px;
-    }
-
-    h2 {
-        margin-top: 40px;
-    }
-
-    ul li {
-        text-align: left;
-        margin-top: 8px;
-        font-size: 16px;
-    }
-
-    ul {
-        padding-left: 20px;
-        margin-bottom: 20px;
-    }
-
-    .title {
-        font-weight: 700;
-        display: block;
-        text-align: left;          
-    }
-
-    .location {
-        font-style: italic;
-        display: block;
-        text-align: left;          
-    }
-
-    .dates {
-        display: block;
-        text-align: left;        
-    }
-
-    .resume {
-        display: block;
-        text-align: left;  
-        font-size: 19px;        
-    }
-
-    .item {
-        text-align: center;
-        margin: 2px;
-    }
-
-    .card {
-        background-color: white;
-        border: 1px solid green;
-        width: 90%;
-        height: 100%;
-        text-align: center;
-        margin: auto;
-        position: relative;
-    }
-
-    .projectImage {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-    }
-
-    .projectTitle {
-        position: absolute;
-        font-color: gray;
-        bottom: 5px;
-        left: 15px;
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 100px, 100px, 800px, 100px, 900px;
+        align-items: start;                
     }
 
     #backToTop {
-        display: block;
-        margin: 10px;
-        cursor: pointer;
-        text-decoration: none;
-        color: gray;
-
+        display: none;
     }
 
-    .image { width: 100%; }
-
-    .linkedIn {
-        height: 45px;
+    #logo {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 30px;
+        align-self: flex-start;
+        margin-top: 20px;
+        height: 100px;
     }
 
-    .verticalHelper {
-        height: 100%;
-        vertical-align: middle;
+    .icon {
+        margin: 0 3px 0 3px;
     }
 
-    hr {
-        display: block;
-        border: none;
-        border-top: 4px solid #f6f6f6;
-        margin: 20px;
+    .recolor {
+        grid-column: 1;
+        grid-row: 1; 
+        font-size: 14px;  
+        color: #36C936;
+        align-self: end;
+        justify-self: start;   
+        margin-left: 180px;
+        margin-bottom: 4px;         
     }
 
-    h2 {
-        border-top: 4px solid #f6f6f6;
-        border-bottom: 4px solid #f6f6f6;    
-        padding: 7px 0 7px 0;    
+    .fa-paint-brush {
+        font-size: 14px;
+        color: #36C936;
+        margin-right: 4px;
     }
 
-    .commentary {
-        background-color: rgba(0, 0, 0, 0.7);
-        position: absolute;
+    #colorpicker {
+        grid-column: 1;
+        grid-row: 1; 
+        align-self: end;
+        justify-self: start;   
+        margin-left: 175px;
+        z-index: 1;  
+        width: 140px;
+        opacity: 0; 
+        cursor: pointer;            
+    }
+
+    #name {
+        grid-column: 2 / 4;
+        grid-row: 1;
+    }
+
+    #name p {
+        text-align: right;
+        margin: 0 15px 5px 0;
+    }
+
+    h1 {
+        text-align: right;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #iconList {
+        margin-right: 15px;
+        margin-top: -15px;
+        justify-self: end;
+        align-self: center;
         display: inline-block;
-        height: 95px;
-        bottom: 55px;
-        width: 100%;
+        letter-spacing: 3px;
+        float: left;
+        grid-column: 3;
+        grid-row: 2;
     }
 
-    .commentary p:first-child {
-        color: white;
+    #projectsHeader {
+        grid-column: 1 / 4;
+        grid-row: 2;
         text-align: left;
-        margin: 8px 0 0 10px;
-        font-weight: 700;
-        font-size: 19px;
-        font-style: italic;
+        margin-left: 20px;
+        margin-top: 10px;        
     }
 
-    .commentary p:last-child {
-        color: white;
-        text-align: left;
-        margin: 0 0 0 10px;
-        width: 95%;
+    #project1 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #project2 {
+        grid-column: 2;
+        grid-row: 3;
     }    
+
+    #project3 {
+        grid-column: 3;
+        grid-row: 3;
+    }  
+
+    .projectdescription {
+        max-width: 75%;
+        display: inline-block;
+        text-align: justify;
+    }
+
+    #resumeHeader {
+        grid-column: 1 / 4;
+        grid-row: 4;
+        text-align: left;
+        margin-left: 20px;   
+    }   
+
+    #resume {
+        grid-column: 1 / span 3;
+        grid-row: 5;
+        margin-right: 20px; 
+        max-width: 850px;              
+    }
+
+    .location, .dates {
+        float: right;
+    }
+
+    .title, .resume {
+        clear: left;
+        float: left;
+    }
+
+    .bigbr {
+        display: none;
+    }
 
 }

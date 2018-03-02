@@ -3,116 +3,103 @@
 <head>
     <title>Viviana Ogawa</title>
     <meta charset="UTF-8"> 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet"> 
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> 
      <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="aboveFooter">
-        <div id = "leftColumn">
-            <img id = "logo" src = "https://vsogawa.github.io/VO_logo.png">
+    <div id = "container">
+        <img id = "logo" src = "https://vsogawa.github.io/VO_logo.png">
+        
+        <section id = "name">
             <h1>Viviana Ogawa</h1>
-            <p>Palo Alto</p>
-            <div id = "bigScreenIcons">
-                <a href = "mailto:vsogawa@gmail.com"><img class = "contactIcon" src = "https://vsogawa.github.io/icons8-secured-letter-50.png"></a>
-                <a href="https://www.linkedin.com/in/vsogawa" target="_blank"><img class = "contactIcon linkedIn" src = "https://vsogawa.github.io/icons8-linkedin-filled-50.png"></a>
-                <a href="https://github.com/vsogawa" target="_blank"><img class = "contactIcon" src = "https://vsogawa.github.io/icons8-github-50.png"></a>
-                <span class = "verticalHelper"></span>
-            </div> 
-        </div>
-        <div id = "rightColumn">
+            <p class = "colorChange">Front-end web developer</p>
+            <p class = "colorChange">Palo Alto, California</p>
+        </section>
+            <div id = "iconList">
+                <a href = "mailto:vsogawa@gmail.com"><i class="fa fa-envelope-square icon"></i></a>
+                <a href="https://www.linkedin.com/in/vsogawa" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+                <a href="https://github.com/vsogawa" target="_blank"><i class="fa fa-github-square icon"></i></a>
+            </div>    
 
-            <h2>Projects</h2>
+        <div class = "recolor colorChange"><input type = "color" id="colorpicker" value = "#36C936"><i class="fa fa-paint-brush fa-spin colorChange"></i>Change my color!</div>
 
-  <div class="cd-slider">
-    <ul>
-      <li>
-        <div class="image" style="background-image:url(https://vsogawa.github.io/helloworld.PNG);">
-            <a class = "image" target = "_blank" href="https://htmlpreview.github.io/?https://github.com/vsogawa/Pixel-Art-Maker/blob/master/index.html"></a>
-        </div>
-        <div class = "commentary"><p>Pixel Art Maker</p><p>Udacity Google Scholarship final project</p></div>
-      </li>
-      <li>
-        <div class="image" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);">
-            <a class = "image" target = "_blank" href="https://htmlpreview.github.io/?https://github.com/vsogawa/Pixel-Art-Maker/blob/master/index.html"></a>            
-        </div>
-        <div class = "commentary"><p>Project title</p><p>Project comment one-liner</p></div>        
-      </li>
-      <li>
-        <div class="image" style="background-image:url(https://images.unsplash.com/photo-1416838375725-e834a83f62b7?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);">
-            <a class = "image" target = "_blank" href="https://htmlpreview.github.io/?https://github.com/vsogawa/Pixel-Art-Maker/blob/master/index.html"></a>            
-        </div>
-        <div class = "commentary"><p>Project title</p><p>Project comment one-liner</p></div>        
-      </li>
-      <li>
-        <div class="image" style="background-image:url(https://images.unsplash.com/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);">
-            <a class = "image" target = "_blank" href="https://htmlpreview.github.io/?https://github.com/vsogawa/Pixel-Art-Maker/blob/master/index.html"></a>            
-        </div>
-        <div class = "commentary"><p>Project title</p><p>Project comment one-liner</p></div>        
-      </li>
-      <li>
-        <div class="image" style="background-image:url(https://images.unsplash.com/photo-1453974336165-b5c58464f1ed?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);">
-            <a class = "image" target = "_blank" href="https://htmlpreview.github.io/?https://github.com/vsogawa/Pixel-Art-Maker/blob/master/index.html"></a>            
-        </div>
-        <div class = "commentary"><p>Project title</p><p>Project comment one-liner</p></div>        
-      </li>      
-    </ul>
-  </div> <!--/.cd-slider-->
+        <h2 id = "projectsHeader" class = "colorChange">
+        <div class = "divider colorChange"></div>
+        Projects
+        <div class = "divider colorChange"></div>
+        </h2>
+        
+            <article id = "project1">
+                <div class = "picContainer"><img id = "project1pic" class = "projectImage" src = "https://static.zerochan.net/Bravely.Default%3A.Flying.Fairy.full.2044995.jpg"><div class = "titleShadowBox"></div>
+                <p id = "project1title" class = "projectTitle">This one is a long title just to test</p></div>
+                <p id = "project1text" class = "projectdescription">Lorem ipsum dolor sit amet, alienum luptatum eu cum. Sea cu mazim adversarium, eros meis utinam te nec, dicam erroribus neglegentur ex mel.</p>
+            </article>
+            <article id = "project2">            
+                <div class = "picContainer"><img id = "project2pic" class = "projectImage" src = "https://s1.zerochan.net/Fire.Emblem.If.600.1900468.jpg"><div class = "titleShadowBox"></div><p id = "project2title" class = "projectTitle">Title2</p></div>
+                <p id = "project2text" class = "projectdescription">Sample text p2</p>
+            </article>
+            <article id = "project3">            
+                <div class = "picContainer"><img id = "project3pic" class = "projectImage" src = "https://static.zerochan.net/Aqua.%28Fire.Emblem%29.full.1934534.jpg"><div class = "titleShadowBox"></div>
+                <p id = "project3title" class = "projectTitle">Title3</p>
+                </div>              
+                <p id = "project2text" class = "projectdescription">Lorem ipsum dolor sit amet, alienum luptatum eu cum. Sea cu mazim adversarium, eros meis utinam te nec, dicam erroribus neglegentur ex mel.
+        </p>
+            </article>
+        <h2 id = "resumeHeader" class = "colorChange">        
+            <div class = "divider colorChange"></div>
+        Resume
+        <div class = "divider colorChange"></div></h2>
+        <section id = "resume">
+        <span class = "title colorChange">Pharmaceutical Manufacturing Consultant</span><br class = "bigbr"><span class = "dates">January 2017 - January 2018</span><br class = "smallbr">
+        <span class = "resume">Shire</span><br class = "bigbr">
+        <span class = "location">Amsterdam, Netherlands</span><br>
+        <ul class = "bullets">
+            <li><span>Improve production compliance and cGMP with contract manufacturer Sanquin Plasma Products (SPP) to ensure fulfillment goals and project deadlines are met</span></li>
+            <li><span>Refine and improve equipment and processes through kaizens</span></li>
+            <li><span>Own event investigations as manufacturing subject matter expert</span></li>
+        </ul>
+        
+        <span class = "title colorChange">Manufacturing Supervisor</span><br class = "bigbr">
+        <span class = "dates">April 2015 - January 2017</span><br>
+        <span class = "resume">Shire</span><br class = "bigbr">
+        <span class = "location">Los Angeles, California</span><br class = "smallbr">
+        <ul class = "bullets">
+            <li><span>Supervise team of manufacturing operators for day-to-day production of parenteral drug products</span></li>
+            <li><span>Lead scheduling, staffing, regulatory compliance, and audit activities</span></li>
+            <li><span>Manage projects and lead cross-functional teams to complete process initiatives around safety, yield, and compliance improvement</span></li>
+        </ul>
+        
+        <span class = "title colorChange">Manufacturing Associate</span><br class = "bigbr">        
+        <span class = "dates">June 2013 - May 2015</span><br class = "smallbr">
+        <span class = "resume">Baxter Bioscience/Baxalta</span><br class = "bigbr">
+        <span class = "location ">Los Angeles, California</span><br>
+        <ul class = "bullets">
+            <li><span>Act as manufacturing supervisor in ensuring shift compliance with safety, GMP, and regulatory rules and regulations</span></li>
+            <li><span>Set up, run, and harvest filter presses and centrifuges and perform chemical/buffer additions</span></li>
+            <li><span>Manage projects and lead cross-functional teams to complete process initiatives around safety, yield, and compliance improvement</span></li>
+            <li><span>ISO7/8 cleanroom gown certified</span></li>
+        </ul>
+        
+        <span class = "title colorChange">Webmaster/Publicist</span><br class = "bigbr">
+        <span class = "dates">August 2013 - July 2015</span><br class = "smallbr">
+        <span class = "resume">University of California, Los Angeles</span><br class = "bigbr">          
+        <span class = "location">Los Angeles, California</span><br>
+        <ul class = "bullets">
+            <li><span>Managed official UCLA Bioengineering Department website</span></li>
+            <li><span>Created departmental communications including newsletters, flyers, poster boards, and graphics for print and online media</span></li>
+        </ul>
 
-            <h2>Resume</h2>
-            <span class = "title resume">Pharmaceutical Manufacturing Consultant</span>
-            <span class = "resume">Shire</span>                        
-            <span class = "location">Amsterdam, Netherlands</span>
-            <span class = "dates">January 2017 - January 2018</span>        
-            <ul class = "bullets">
-                <li>Improve production compliance and cGMP with contract manufacturer Sanquin Plasma Products (SPP) to ensure fulfillment goals and project deadlines are met</li>
-                <li>Refine and improve equipment and processes through kaizens</li>
-                <li>Own event investigations as manufacturing subject matter expert</li>
-            </ul>
-            <hr>
-            <span class = "title resume">Manufacturing Supervisor</span>
-            <span class = "resume">Shire</span>            
-            <span class = "location">Los Angeles, California</span>
-            <span class = "dates">April 2015 - January 2017</span>        
-            <ul class = "bullets">
-                <li>Supervise team of manufacturing operators for day-to-day production of parenteral drug products</li>
-                <li>Lead scheduling, staffing, regulatory compliance, and audit activities</li>
-                <li>Manage projects and lead cross-functional teams to complete process initiatives around safety, yield, and compliance improvement</li>
-            </ul>
-            <hr>
-            <span class = "title resume">Manufacturing Associate</span>
-            <span class = "resume">Baxter Bioscience/Baxalta</span>
-            <span class = "location ">Los Angeles, California</span>
-            <span class = "dates">June 2013 - May 2015</span>        
-            <ul class = "bullets">
-                <li>Act as manufacturing supervisor in ensuring shift compliance with safety, GMP, and regulatory rules and regulations</li>
-                <li>Set up, run, and harvest filter presses and centrifuges and perform chemical/buffer additions</li>
-                <li>Manage projects and lead cross-functional teams to complete process initiatives around safety, yield, and compliance improvement</li>
-                <li>ISO7/8 cleanroom gown certified</li>
-            </ul>
-            <hr>
-            <span class = "title resume">Webmaster/Publicist</span>
-            <span class = "resume">University of California, Los Angeles</span>                        
-            <span class = "location">Los Angeles, California</span>
-            <span class = "dates">August 2013 - July 2015</span>
-            <ul class = "bullets">
-                <li>Managed official UCLA Bioengineering Department website</li>
-                <li>Created departmental communications including newsletters, flyers, poster boards, and graphics for print and online media</li>
-            </ul>            
+        <img id = "footer" src="http://saudiwings.com/wp-content/uploads/2017/01/footer-1.png">
+        <p id = "copytext">Image &copy;Saudi Wings</p>         
+        </section>   
 
-        </div>
-    <a href="#aboveFooter" id = "backToTop">
-        Back to Top
-    </a>
 
+        <a id = "backToTop" class = "colorChange">
+            Back to Top
+        </a>
     </div>
-
-    <div id = "smallScreenIcons">
-        <a href = "mailto:vsogawa@gmail.com"><img class = "contactIcon" src = "https://vsogawa.github.io/icons8-secured-letter-50.png"></a>
-        <a href="https://www.linkedin.com/in/vsogawa" target="_blank"><img class = "contactIcon linkedIn" src = "https://vsogawa.github.io/icons8-linkedin-filled-50.png"></a>
-        <a href="https://github.com/vsogawa" target="_blank"><img class = "contactIcon" src = "https://vsogawa.github.io/icons8-github-50.png"></a>
-        <span class = "verticalHelper"></span>
-    </div>   
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
