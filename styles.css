@@ -112,8 +112,6 @@ h1 {
 
 body {
     position: relative;
-    max-width: 1600px;
-    margin: auto;
 }
 
 .picContainer {
@@ -211,7 +209,9 @@ span {
         display: grid;
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: 100px, 100px, 800px, 100px, 900px;
-        align-items: start;                
+        align-items: start;
+        max-width: 1600px;
+        margin: auto;              
     }
 
     #backToTop {
