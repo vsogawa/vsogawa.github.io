@@ -31,6 +31,13 @@ li {
     font-size: 20px;
 }
 
+.projectdescription {
+    margin-bottom: 45px;
+    text-align: justify;
+    max-width: 75%;   
+    display: inline-block;     
+}
+
 h1 {
     margin-right: 15px;
     margin-top: 50px;
@@ -244,8 +251,8 @@ span {
         grid-row: 1; 
         align-self: end;
         justify-self: start;   
-        margin-left: 175px;
         z-index: 1;  
+        margin: 0 0 0 10px;        
         width: 140px;
         opacity: 0; 
         cursor: pointer;            
@@ -304,9 +311,7 @@ span {
     }  
 
     .projectdescription {
-        max-width: 75%;
-        display: inline-block;
-        text-align: justify;
+        margin-bottom: 0;
     }
 
     #resumeHeader {
