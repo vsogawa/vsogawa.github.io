@@ -21,6 +21,7 @@ h1 {
 
 #logo {
     margin-top: 50px;
+    width: 100px;
 }
 
 .fa {
@@ -101,6 +102,12 @@ h1 {
 
 .projectImage {
     width: 100%;
+    opacity: 1;
+}
+
+.projectImage:hover {
+    opacity: 0.6;
+    transition: 0.2s;
 }
 
 .titleShadowBox {
@@ -226,7 +233,7 @@ span {
         margin-left: 30px;
         align-self: flex-start;
         margin-top: 20px;
-        height: 100px;
+        width: 150px;
     }
 
     .icon {
