@@ -103,6 +103,7 @@ h1 {
 .projectImage {
     width: 100%;
     opacity: 1;
+    transition: 0.2s;
 }
 
 .projectImage:hover {
