@@ -19,6 +19,10 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    margin: 15px;
+}
+
 #logo {
     margin-top: 50px;
     width: 100px;
@@ -86,13 +90,14 @@ h1 {
     background: linear-gradient(to right, #D6D6D6, #D6D6D6, #36C936);
 }
 
-#projectsHeader {
+#projects-header {
+    margin: 40px 0 40px 0;
     color: #36C936;
-    font-size: 32px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 
-.picContainer {
+.pic-container {
     max-width: 90%;
     max-height: 250px;
     overflow: hidden;
@@ -100,18 +105,18 @@ h1 {
     position: relative;
 }
 
-.projectImage {
+.project-image {
     width: 100%;
     opacity: 1;
     transition: 0.2s;    
 }
 
-.projectImage:hover {
+.project-image:hover {
     opacity: 0.4;
     transition: 0.2s;
 }
 
-.titleShadowBox {
+.title-shadowbox {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -120,7 +125,7 @@ h1 {
     background-color: rgba(0,0,0,0.7);
 }
 
-.projectTitle {
+.project-title {
     color: white;
     position: absolute;
     bottom: 5px;
@@ -144,9 +149,10 @@ h1 {
 
 /*//////////////////Resume section///////////////////*/
 
-#resumeHeader {
+#resume-header {
+    margin: 40px 0 40px 0;
     color: #36C936;
-    font-size: 32px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 
@@ -225,8 +231,11 @@ span {
         margin: auto;
     }
 
-/*////////////////SMALL VIEWPORT WIDTH Header Styles 
+/*////////////////BIG VIEWPORT WIDTH Header Styles 
 (everything above projects divider plus contact icons)/////////////*/
+    h2 {
+        text-align: left;
+    }
 
     #logo {
         grid-column: 1;
@@ -243,7 +252,7 @@ span {
 
     #iconList {
         margin-right: 15px;
-        margin-top: -15px;
+        margin-top: -30px;
         justify-self: end;
         align-self: center;
         display: inline-block;
@@ -299,9 +308,9 @@ span {
         margin: 0 15px 5px 0;
     }
 
-/*///////////SMALL VIEWPORT WIDTH Projects section/////////////*/
+/*///////////BIG VIEWPORT WIDTH Projects section/////////////*/
 
-    #projectsHeader {
+    #projects-header {
         grid-column: 1 / 4;
         grid-row: 2;
         text-align: left;
@@ -328,9 +337,9 @@ span {
         margin-bottom: 0;
     }
 
-/*/////////////SMALL VIEWPORT WIDTH Resume section///////////////*/
+/*/////////////BIG VIEWPORT WIDTH Resume section///////////////*/
 
-    #resumeHeader {
+    #resume-header {
         grid-column: 1 / 4;
         grid-row: 4;
         text-align: left;
@@ -357,7 +366,7 @@ span {
         display: none;
     }
 
-/*///////////SMALL VIEWPORT WIDTH Post Content//////////////////*/
+/*///////////BIG VIEWPORT WIDTH Post Content//////////////////*/
 
     #backToTop {
         display: none;
