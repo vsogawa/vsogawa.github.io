@@ -225,7 +225,6 @@ span {
     #container {
         display: grid;
         grid-template-columns: repeat(3, 33%);
-        grid-template-rows: 100px, 100px, 800px, 100px, 900px;
         align-items: start;
         max-width: 1600px;
         margin: auto;
@@ -244,6 +243,7 @@ span {
         align-self: flex-start;
         margin-top: 20px;
         width: 150px;
+        margin-bottom: 30px;
     }
 
     .icon {
@@ -251,15 +251,12 @@ span {
     }
 
     #iconList {
-        margin-right: 15px;
-        margin-top: -30px;
-        justify-self: end;
-        align-self: center;
         display: inline-block;
         letter-spacing: 3px;
-        float: left;
         grid-column: 3;
-        grid-row: 2;
+        grid-row: 1;
+        text-align: right;
+        margin-top: 120px;
     }
 
     .recolor {
@@ -267,10 +264,7 @@ span {
         grid-row: 1;
         font-size: 14px;
         color: #36C936;
-        align-self: end;
-        justify-self: start;
-        margin-left: 180px;
-        margin-bottom: 4px;
+
     }
 
     .fa-paint-brush {
@@ -282,8 +276,6 @@ span {
     #colorpicker {
         grid-column: 1;
         grid-row: 1;
-        align-self: end;
-        justify-self: start;
         z-index: 1;
         margin: 0 0 0 10px;
         width: 140px;
