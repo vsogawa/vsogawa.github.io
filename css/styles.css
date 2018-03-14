@@ -427,12 +427,6 @@ span {
         transform: rotateZ(-1deg);
     }
 
-    #tape2 {
-        top: 420px;
-        left: 40vw;
-        transform: rotateZ(3deg);
-    }
-
     #tape3 {
         top: 100px;
         left: 40vw;
