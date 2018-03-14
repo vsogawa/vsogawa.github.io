@@ -562,12 +562,6 @@ span {
         transform: rotateZ(-1deg);
     }
 
-    #tape2 {
-        top: 450px;
-        left: 42vw;
-        transform: rotateZ(3deg);
-    }
-
     #tape3 {
         top: 135px;
         left: 45vw;
