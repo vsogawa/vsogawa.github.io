@@ -4,6 +4,8 @@
     <title>Viviana Ogawa</title>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,103 +13,127 @@
 </head>
 
 <body>
-    <div id = "container">
+    <header>
         <img id = "logo" src = "https://vsogawa.github.io/img/vo_logo.png" alt="logo">
-        
-        <section id = "name">
-            <h1>Viviana Ogawa</h1>
-            <p class = "color-change">Front-end web developer</p>
-            <p class = "color-change">Palo Alto, California</p>
-        </section>
-
+        <h1>Viviana Ogawa</h1>
         <div id = "iconList">
             <a href = "mailto:vsogawa@gmail.com"><i class="fa fa-envelope-square icon"></i></a>
             <a href="https://www.linkedin.com/in/vsogawa" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
             <a href="https://github.com/vsogawa" target="_blank"><i class="fa fa-github-square icon"></i></a>
         </div>
+    </header>
+    <nav>
+        <span class="foldertab folderbehind" id="tab4"><p>About Me</p></span>        
+        <span class="foldertab folderbehind" id="tab3"><p>Resume</p></span>
+        <span class="foldertab folderbehind" id="tab2"><p>Project 2</p></span>
+        <span class="foldertab folderactive" id="tab1"><p>Project 1</p></span>       
+    </nav>
 
-        <div id = "projects-header" class = "color-change">
-        <div class = "divider color-change"></div>
-        <h2>Projects</h2>
-        <div class = "divider color-change"></div>
+    <main id = "container">
+        <div id = "foldercover" class="cover"><p><span>Candidate File: </span><span id="name"> Viviana Ogawa</span></p></div>
+
+
+        <!--/////////////////////ABOUT ME PAGE CONTENT/////////////////////-->                                                            
+        <div class="tab inactive" id="page4">
+            <div class="paper">
+            <div class="hole"></div>
+            <div class="hole2"></div>
+                <h2>About Me</h2>
+                <p>content</p>
+            </div>
+            <div class="redlines"></div>            
+        </div>        
+
+        <!--/////////////////////RESUME PAGE CONTENT/////////////////////-->                                                            
+        <div class="tab inactive" id="page3">
+            <div class="paper">
+            <div class="hole"></div>
+            <div class="hole2"></div>                                                            
+                <h2>Resume</h2>
+                <div id = "iconList2">
+                    <a href = "mailto:vsogawa@gmail.com"><i class="fa fa-envelope-square icon"></i></a>
+                    <a href="https://www.linkedin.com/in/vsogawa" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+                    <a href="https://github.com/vsogawa" target="_blank"><i class="fa fa-github-square icon"></i></a>
+                </div>
+                    <div id = "resume">
+                    <span class = "title color-change">Udacity Google Developer Challenge Scholarship</span><br class = "bigbr">
+                    <span class = "dates">October 2017 - February 2018</span><br class = "smallbr">
+                    <ul class = "bullets">
+                        <li><span>Proficient in HTML/CSS syntax and responsive design</span></li>
+                        <li><span>Proficient in Javascript and jQuery</span></li>
+                        <li><span>Selected as part of the top 10% of challenge course participants to receive a scholarship to Udacity's Front End Developer Nanodegree program</span></li>
+                    </ul>
+
+                    <span class = "title color-change">Pharmaceutical Manufacturing Consultant</span><br class = "bigbr">
+                    <span class = "dates">January 2017 - January 2018</span><br class = "smallbr">
+                    <span class = "resume">Shire</span><br class = "bigbr">
+                    <span class = "location">Amsterdam, Netherlands</span><br>
+                    <ul class = "bullets">
+                        <li><span>Improve production compliance and cGMP with contract manufacturer Sanquin Plasma Products (SPP) to ensure fulfillment goals and project deadlines are met</span></li>
+                        <li><span>Refine and improve equipment and processes through kaizens</span></li>
+                        <li><span>Own event investigations as manufacturing subject matter expert</span></li>
+                    </ul>
+                    
+                    <span class = "title color-change">Manufacturing Associate / Supervisor</span><br class = "bigbr">
+                    <span class = "dates">June 2013 - January 2017</span><br>
+                    <span class = "resume">Baxter / Baxalta</span><br class = "bigbr">
+                    <span class = "location">Los Angeles, California</span><br class = "smallbr">
+                    <ul class = "bullets">
+                        <li><span>Supervise team of manufacturing operators for day-to-day production of parenteral drug products</span></li>
+                        <li><span>Lead scheduling, staffing, regulatory compliance, and audit activities</span></li>
+                        <li><span>Manage projects and lead cross-functional teams to complete process initiatives around safety, yield, and compliance improvement</span></li>
+                        <li><span>Act as primary point of contact for manufacturing startup qualification activities for process validation and equipment validation contractors and employees</span></li>                
+                    </ul>
+                    
+                    <span class = "title color-change">Webmaster/Publicist</span><br class = "bigbr">
+                    <span class = "dates">August 2013 - July 2015</span><br class = "smallbr">
+                    <span class = "resume">University of California, Los Angeles</span><br class = "bigbr">
+                    <span class = "location">Los Angeles, California</span><br>
+                    <ul class = "bullets">
+                        <li><span>Managed official UCLA Bioengineering Department website</span></li>
+                        <li><span>Created departmental communications including newsletters, flyers, poster boards, and graphics for print and online media</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="redlines"></div>            
         </div>
-        
-        <div id = "project1">
-            <div class = "pic-container">
-                <a href="http://htmlpreview.github.io/?https://github.com/vsogawa/Matching-game/blob/master/index.html" target="_blank"><img id = "project1pic" class = "project-image" src = "https://vsogawa.github.io/img/memorygame.png" alt = "memorygame"></a>
-                <div class = "title-shadowbox"></div>
-            <p id = "project1title" class = "project-title">Matching Game</p></div>
-            <p id = "project1text" class = "projectdescription">Udacity Front-end development nanodegree project featuring pair-finding web application game. Javascript and jQuery demonstration with functions, loops, and conditionals.</p>
+
+        <!--/////////////////////PROJECT 2 PAGE CONTENT/////////////////////-->                                                          
+        <div class="tab inactive" id="page2">
+            <div class="paper">
+            <div class="hole"></div>
+            <div class="hole2"></div>                                                                                                                
+                <h2>Featured Project - Matching Game</h2>
+                <p>content</p>
+            </div>
+            <div class="redlines"></div>                
         </div>
 
-        <div id = "project2">
-            <div class = "pic-container">
-                <a href="https://htmlpreview.github.io/?https://github.com/vsogawa/Pixel-Art-Maker/blob/master/index.html" target="_blank"><img id = "project2pic" class = "project-image" src = "https://vsogawa.github.io/img/helloworld.png" alt = "helloworld"></a><div class = "title-shadowbox"></div>
-            <p id = "project2title" class = "project-title">Pixel Art Maker</p></div>
-            <p id = "project2text" class = "projectdescription">Udacity Front-end development nanodegree project featuring a painting web application. Javascript and jQuery demonstration with functions, loops, and conditionals.</p>
-        </div>
 
-        <div id = "project3">
-            <div class = "pic-container">
-                <img id = "project3pic" class = "project-image" src = "https://vsogawa.github.io/img/madlibs.PNG" alt = "madlibs"><div class = "title-shadowbox"></div>
-            <p id = "project3title" class = "project-title">Mad Libs Email</p></div>
-            <p id = "project3text" class = "projectdescription">Project in progress. Features a mad-libs game that allows player to input word types, and sends user the completed mad-lib via email.</p>
-        </div>
+        <!--/////////////////////PROJECT 1 PAGE CONTENT/////////////////////-->                                                            
+        <div class="tab active" id="page1">
+            <div class="paper">
+            <div class="hole"></div>
+            <div class="hole2"></div>                                                                                                                
+                <h2>Featured Project - Pixel Art Maker</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet arcu tortor. Nulla porta et nunc quis semper. Sed et mauris condimentum, varius purus ut, blandit ipsum. Quisque magna turpis, aliquam ut euismod non, eleifend ut nisi. Vivamus facilisis lacus id purus luctus, nec tincidunt ante porttitor. Praesent quis hendrerit mi. In hac habitasse platea dictumst. Duis quis arcu eu mi accumsan consequat. Nam gravida metus eget viverra pharetra. Fusce quis est interdum, maximus neque malesuada, dapibus tellus. Etiam bibendum, erat a iaculis commodo, leo lectus molestie augue, et vestibulum turpis nisl et magna.
 
-        <div id = "resume-header" class = "color-change">
-        <div class = "divider color-change"></div>
-        <h2>Resume</h2>
-        <div class = "divider color-change"></div></div>
+Phasellus vitae purus ex. Donec vitae lacus vitae justo consectetur vehicula ut ut nulla. Aliquam fermentum condimentum ligula. Suspendisse sed ante magna. Nunc libero purus, varius elementum congue vel, aliquam vel tortor. In rutrum massa at lorem placerat molestie. Nullam ex ipsum, interdum vel nunc ac, euismod dignissim magna. Donec finibus dolor ut nunc tempus eleifend.
 
-        <div id = "resume">
-            <span class = "title color-change">Udacity Google Developer Challenge Scholarship</span><br class = "bigbr">
-            <span class = "dates">October 2017 - February 2018</span><br class = "smallbr">
-            <ul class = "bullets">
-                <li><span>Proficient in HTML/CSS syntax and responsive design</span></li>
-                <li><span>Proficient in Javascript and jQuery</span></li>
-                <li><span>Selected as part of the top 10% of challenge course participants to receive a scholarship to Udacity's Front End Developer Nanodegree program</span></li>
-            </ul>
+Cras lobortis mattis diam, luctus mollis ex molestie bibendum. Nunc et facilisis risus. Nam vulputate, eros feugiat varius cursus, quam turpis ullamcorper ante, non posuere erat ipsum nec ligula. Aenean et risus vitae arcu maximus vestibulum. Integer sollicitudin venenatis quam non tempus. Nulla sit amet sodales arcu. Nam gravida sodales leo, a venenatis mauris varius eu. Phasellus molestie tortor ac est iaculis, non finibus risus dapibus.
 
-            <span class = "title color-change">Pharmaceutical Manufacturing Consultant</span><br class = "bigbr">
-            <span class = "dates">January 2017 - January 2018</span><br class = "smallbr">
-            <span class = "resume">Shire</span><br class = "bigbr">
-            <span class = "location">Amsterdam, Netherlands</span><br>
-            <ul class = "bullets">
-                <li><span>Improve production compliance and cGMP with contract manufacturer Sanquin Plasma Products (SPP) to ensure fulfillment goals and project deadlines are met</span></li>
-                <li><span>Refine and improve equipment and processes through kaizens</span></li>
-                <li><span>Own event investigations as manufacturing subject matter expert</span></li>
-            </ul>
-            
-            <span class = "title color-change">Manufacturing Associate / Supervisor</span><br class = "bigbr">
-            <span class = "dates">June 2013 - January 2017</span><br>
-            <span class = "resume">Baxter / Baxalta</span><br class = "bigbr">
-            <span class = "location">Los Angeles, California</span><br class = "smallbr">
-            <ul class = "bullets">
-                <li><span>Supervise team of manufacturing operators for day-to-day production of parenteral drug products</span></li>
-                <li><span>Lead scheduling, staffing, regulatory compliance, and audit activities</span></li>
-                <li><span>Manage projects and lead cross-functional teams to complete process initiatives around safety, yield, and compliance improvement</span></li>
-                <li><span>Act as primary point of contact for manufacturing startup qualification activities for process validation and equipment validation contractors and employees</span></li>                
-            </ul>
-            
-            <span class = "title color-change">Webmaster/Publicist</span><br class = "bigbr">
-            <span class = "dates">August 2013 - July 2015</span><br class = "smallbr">
-            <span class = "resume">University of California, Los Angeles</span><br class = "bigbr">
-            <span class = "location">Los Angeles, California</span><br>
-            <ul class = "bullets">
-                <li><span>Managed official UCLA Bioengineering Department website</span></li>
-                <li><span>Created departmental communications including newsletters, flyers, poster boards, and graphics for print and online media</span></li>
-            </ul>
-        </div>
+Nulla facilisi. In congue lectus sed ante ultrices, sed porta ligula congue. Sed facilisis semper ligula, quis molestie lorem sollicitudin congue. Quisque interdum imperdiet lacus nec porttitor. Cras volutpat commodo elit vel ultrices. Nam vehicula nulla massa, sit amet suscipit tellus condimentum nec. Mauris accumsan mattis condimentum. Suspendisse malesuada, ligula eget varius vulputate, metus nisl pretium elit, ut elementum eros est id arcu.
 
-        <footer><img id = "footer" src="http://saudiwings.com/wp-content/uploads/2017/01/footer-1.png" alt="footer">
-        <p id = "copytext">Image &copy;Saudi Wings</p></footer>
+Vestibulum fermentum congue magna ut tristique. Suspendisse pretium dignissim erat, vestibulum facilisis tortor. Donec a nibh egestas quam feugiat vehicula quis eu sem. Sed eget pellentesque magna. Maecenas eu sagittis tellus. Aenean eget posuere nibh, vitae feugiat diam. Maecenas purus tortor, congue sed risus eget, iaculis condimentum purus. Vivamus finibus sapien at diam commodo, fringilla ullamcorper felis pharetra. Ut a justo pellentesque, egestas sem eget, tristique magna. Nullam et tincidunt ligula. Sed rutrum elit vel augue varius consectetur. Quisque commodo congue elit eu varius. Vestibulum egestas leo quis libero tempor, at venenatis leo vehicula. Donec facilisis at enim a ultrices.
 
+Pellentesque at rutrum urna. Mauris quis mi tempus, molestie nisl quis, aliquet mauris. Curabitur congue ac purus cursus facilisis. Integer eu leo ante. Ut vehicula eros quis purus ultrices posuere. Aenean mattis ante fermentum sem sollicitudin finibus at eu tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sed sodales sem.
 
-        <a href=#logo id = "backToTop" class = "color-change">
-            Back to Top
-        </a>
-    </div>
-
+Curabitur posuere ipsum lacinia diam imperdiet pharetra. Duis in metus a magna viverra mattis et non tellus. Donec sed augue rutrum, efficitur tellus in, euismod urna. Sed rutrum diam eu sem congue, sed lacinia neque facilisis. In hac habitasse platea dictumst. Fusce varius rhoncus lectus. In ultrices ut turpis vel gravida. Sed euismod diam ut risus pellentesque, ut dapibus ipsum ultricies. Nulla facilisi. Mauris id erat ut nibh tempus pharetra nec ut tellus. Duis efficitur non magna at egestas. Fusce tempor magna at risus hendrerit egestas. Vestibulum molestie vel ligula at blandit. In efficitur risus quis nibh maximus, sed feugiat velit feugiat. Proin hendrerit velit sollicitudin metus semper molestie. Aliquam eleifend finibus placerat.
+</p>
+            </div>
+            <div class="redlines"></div>
+        </div>                
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/designs.js"></script>
