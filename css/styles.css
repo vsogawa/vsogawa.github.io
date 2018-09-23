@@ -1,628 +1,229 @@
 * {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
 }
 
-html, body {
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+body {
     position: relative;
 }
 
 header {
+    background-color: #404040;
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 10px;
+}
+
+#picture {
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+#text {
+    margin: 10px 40px 0 30px;
 }
 
 h1 {
-    margin: 5px 0 0 0;
-    color: white;
-    font-weight: bold;
-}
-
-.active {
-    display: block;
-}
-
-.inactive {
-    display: none;
-}
-
-/*////////Social media icons///////////*/
-
-#iconList {
-    margin-top: 5px;
-    margin-right: 20px;
-}
-
-#iconList2 {
-    display: none;
-}
-
-.icon {
-    margin: 0 10px 0px 10px;
-    font-size: 42px;
-    color: white;
-}
-
-.fa-envelope-square:hover {
-    color: orange;
-}
-
-.fa-linkedin-square:hover {
+    font-weight: 700;
     color: skyblue;
+    font-size: 40px;
 }
 
-.fa-github-square:hover {
-    color: plum;
+h2 {
+    font-weight: 400;
+    color: white;
 }
 
-/*////////The folder tabs///////////*/
-
-nav {
-    text-align: left;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+.fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 80px;
+    transform: translate(-50%, -50%)
 }
 
-nav span p {
-    margin: 5px;
+main {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
 }
 
-.foldertab {
-    padding: 0px 20px 0px 20px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    transform: perspective(4px) rotateX(1deg);
-    white-space: nowrap;
-    box-shadow: 5px -2px 0px 0px rgba(0,0,0,0.1);
+img {
+    object-fit: cover;
 }
 
-.foldertab:hover {
+.hexagon a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.show {
+    display: none;
+    transition: 0.3s;
+}
+
+#grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#grid li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 27.85714285714286%;
+    padding: 0 0 32.16760145166612% 0;
+    transform: rotateZ(-60deg) skewY(30deg);
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#grid li .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-30deg) rotateZ(60deg);
+    overflow: hidden;
+    perspective: 1000px;
     cursor: pointer;
 }
 
-.foldertab:last-of-type {
-    margin-left: 30px;
+.blue {
+    background: skyblue;
 }
 
-.folderbehind {
-    background-color: #E2CEB0;
-    border: 2px solid #D8BE96;        
+#grid li .blue:hover {
+    background: lightblue;
 }
 
-.folderactive {
-    background-color: #FCF6CD;
-    z-index: 1;
-    border: 2px solid #FCF6CD;                    
+#grid li .hexagon img {
+    transition-duration: 0.3s;
 }
 
-.foldertab > p {
-    text-decoration: none;
-    transform: none;
+.opacity {
+    transition-duration: 0.2s;
+    opacity: 0.3;
 }
 
-/*////////The folder itself///////////*/
+#grid li * {
+    visibility: visible;
+}
 
-#container {
-    display: flex;
+.container {
     position: relative;
+    width: 100%;
+    top: 50%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
 }
 
-#foldercover {
-    background-color: #FCF6CD;
-    z-index: 2;
-    height: calc(100vh - 150px);
-    border-top-left-radius: 40px;
-    width: 99vw;
-    margin: auto;
-    position: absolute; 
-    bottom: 0;
-    box-shadow: 5px -10px 5px 5px rgba(0,0,0,0.1); 
-}
-
-#foldercover p {
-    font-size: 60px;
-    transform: rotate(4deg);
-    border: 14px solid firebrick;
-    margin: 200px auto 0 auto;
-    width: 60%;
-    padding: 20px;
-    padding-right: 70px;  
-}
-
-#name {
-    border-bottom: 8px solid firebrick;
-    font-family: 'Caveat Brush', cursive;
-    color: #494949;
-    padding: 0 60px 0 20px;
-    white-space: nowrap;
-}
-
-#foldercover p span:first-child {
-    font-family: 'Stardos Stencil', cursive;
-    color: firebrick;
-}
-
-.open {
-    transform: rotateX(90deg);
-    transition: 0.7s;
-    transform-origin: bottom;
-}
-
-.tab {
-    background-color: #FCF6CD;
-    border-radius: 10px;
-    width: 99vw;
-    height: calc(100vh - 100px);
-    margin: auto;
-    position: relative;
-}
-
-/*////////The folder pages///////////*/
-
-.paper {
-    z-index: 0;
-    background-color: white;
-    width: 95%;
-    height: calc(100% - 50px);
-    text-align: left;
-    margin-top: 20px;
-    margin-left: calc(100vw * 0.02);
-    margin-right: calc(100vw * 0.02);   
-    overflow: scroll; 
-    overflow-x: hidden;
+.front,
+.back {
     position: absolute;
-    padding-bottom: 30px;
-}
-
-.center {
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 32px;
+    width: 100%;
     text-align: center;
+    backface-visibility: hidden;
+    overflow: hidden;
 }
 
-.arrow {
-    position: absolute;
-    left: calc(60vw + 130px);
-    top: 350px;
+.front {
+    transform: rotateY(0deg) translate(-50%, -50%);
 }
 
-.arrow p {
-    font-family: 'Caveat Brush', cursive;
-    color: #BF0000;
-    font-size: 36px;
-    position: absolute;
-    top: -80px;
-    width: 140px;
+.back {
+    transform: rotateY(180deg) translate(50%, -50%) scale(-1, 1);
+    padding: 15px;
 }
 
-#arrow1 {
-    width: 100px;
-    margin-top: -20px;
-    position: absolute;
+.container.flip {
+    transform: rotateY(180deg);
+    transition: 0.5s;
 }
 
-.project-image {
-    box-shadow: 4px 4px 18px 7px rgba(0,0,0,0.2);
-    max-width: 90%;
-    margin-top: 30px;
-    transition: 0.2s;
-    margin-bottom: 30px;
+#grid .unshifted.flip {
+    transform: rotateZ(60deg) skewY(-30deg) rotateY(180deg);
+    transition: 0.5s;
 }
 
-.project-image:hover {
-    opacity: 0.6;
-    transition: 0.2s;
+#grid .shifted.flip {
+    transform: translate(50%) rotateZ(60deg) skewY(-30deg) rotateY(180deg);
+    transition: 0.5s;
 }
 
-#project2pic {
-    transform: rotateZ(-1deg);
+#grid li:nth-child(3n+2) {
+    margin: 0 1%;
 }
 
-#project1pic {
-    transform: rotateZ(3deg);
+#grid li:nth-child(6n+4),
+#grid li:nth-child(6n+5),
+#grid li:nth-child(6n+6) {
+    margin-top: -6.9285714285%;
+    margin-bottom: -6.9285714285%;
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
 }
 
-.tape {
-    position: absolute;
-    height: 30px;
-    width: 100px;
-    margin: 0 auto;
-    box-shadow: 2px 2px 8px 3px rgba(181, 181, 181, .2);
-    background-color: rgba(255, 226, 136, .6509803921568628);
+#grid li:nth-child(6n+4) {
+    margin-left: 0.5%;
 }
 
-.projectdescription{
-    width: 50%;
-    margin: auto;
-    font-size: 18px;
-}
-
-
-/*//////////////////Resume section///////////////////*/
-
-li, ul, span {
-    text-align: left;
-}
-
-li {
-    color: #36C936;
-    margin-bottom: 10px;
-}
-
-li:last-child {
-    margin-bottom: 30px;
-}
-
-span {
-    color: black;
-}
-
-#resume {
-    text-align: left;
-    margin: 30px 5px 0 calc(10px + 10vw);
-    max-width: 850px;
-    font-size: 18px;
-}
-
-.bullets li {
-    max-width: 600px;
-}
-
-.title {
-    font-size: 1em;
-    font-weight: 700;
-    color: #36C936
-}
-
-.resume {
-    font-style: italic;
-}
-
-
-/*/////////////////////////////////////////////SMALL SCREEN ONLY///////////////////////////////////////////////////////////////////////*/
-
-
-@media only screen and (max-width: 850px) {
-    #page4, #tab4 {
+@media only screen and (min-width: 600px) and (max-width: 680px) {
+    #picture {
         display: none;
     }
-    
-    * {
-        margin: 0;
-      }
-
-    body {
-        background-color: dodgerblue;
-    }
-
-    #logo {
-        display: none;
-    }
-
-/*////////SMALL SCREEN Social media icons///////////*/
 
     header {
-        justify-content: flex-end;
+        padding: 5px
     }
-
-    h1 {
-        margin-right: 20px;
-    }
-
-    #iconList {
-        display: none;
-    }
-
-    #iconList2 {
-        display: inline-block;
-        float: right;
-        position: absolute;
-        top: 30px;
-        right: 12px;
-    }
-
-    .icon {
-        font-size: 42px;
-        color: gray;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-    }
-
-
-
-/*////////SMALL SCREEN folder tabs///////////*/
-
-
-    .foldertab {
-        padding: 0px 10px 0px 10px;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        transform: perspective(4px) rotateX(1deg);
-        white-space: nowrap;
-        box-shadow: 5px -2px 0px 0px rgba(0,0,0,0.1);
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-    }
-
-    .foldertab:last-of-type {
-        margin-left: 10px;
-    }
-
-
-/*////////SMALL SCREEN folder itself///////////*/
-
-    .tab {
-        width: 100vw;
-    }
-
-    #foldercover {
-        background-color: #FCF6CD;
-        z-index: 2;
-        height: calc(100vh - 130px);
-        border-top-left-radius: 40px;
-        width: 100%;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-    }
-
-    #foldercover p {
-        font-size: calc(22px + 2vw);
-        transform: rotate(4deg);
-        border: calc(5px + 1vw) solid firebrick;
-        margin: 100px auto 0 auto;
-        width: 60%;
-        padding: 20px;  
-    }
-
-    #name {
-        border-bottom: 8px solid firebrick;
-        font-family: 'Caveat Brush', cursive;
-        color: #494949;
-        padding: 0 20px 0 20px;
-        white-space: nowrap;
-    }
-/*////////SMALL SCREEN folder pages///////////*/
-
-    .hole {
-        display: none;
-    }
-
-    .hole2 {
-        display: none;
-    }
-
-    .redlines {
-        display: none;
-    }
-
-    h2 {
-        background: white;
-        width: 100%;
-        height: auto;
-        text-align: left;
-        padding-top: 10px; 
-        padding-left: 5vw;
-        margin: auto;
-        margin-top: 25px;
-        font-size: 26px;
-        font-family: 'Caveat Brush', cursive;
-    }
-
-    h2 + p {
-        text-align: left;
-        margin: 20px 30px 10px 30px;
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    .paper {
-        box-shadow: none;
-    }
-
-    #tape1 {
-        top: 100px;
-        left: calc((100vw - 100px)/2);
-        transform: rotateZ(-1deg);
-    }
-
-    #tape3 {
-        top: 100px;
-        left: 40vw;
-        transform: rotateZ(3deg);        
-    }
-
-    .projectdescription{
-        width: 70%;
-    }
-
-    .arrow {
-        display: none;
-    }
-
-        #polaroid {
-        float: right;
-        margin-right: 8vw;
-        transform: rotateZ(5deg);
-        width: 336px;
-        height: 403px;
-        box-shadow: 4px 4px 18px 7px rgba(0,0,0,0.2);
-        background-color: white;
-    }
-
-    #tape4 {
-        display: none;
-    }
-/*//////////////////SMALL SCREEN Resume section///////////////////*/
-
-    #resume {
-        text-align: left;
-        margin: 30px 5px 0 5vw;
-        max-width: 850px;
-        font-size: 18px;
-    }
-
-    li:first-child {
-        margin-top: 10px;
-    }
-
 }
 
-
-
-/*/////////////////////////////////////////////BIG SCREEN ONLY///////////////////////////////////////////////////////////////////////*/
-
-@media only screen and (min-width: 850px) {
-
-    body {
-        background-color: dodgerblue;
-    }
-
-
-    #logo {
-        margin: 6px 50px 0 30px;
-        width: 50px;
-        height: 33.33px;
-    }
-
-/*////////BIG SCREEN Social media icons///////////*/
-
-/*////////BIG SCREEN folder tabs///////////*/
-
-/*////////BIG SCREEN folder itself///////////*/
-
-/*////////BIG SCREEN folder pages///////////*/
-
-    .hole {
-        height: 30px;
-        width: 30px;
-        background-color: #FCF6CD;
-        border-radius: 100%;
-        z-index: 1;
-        position: absolute;
-        top: 100px;
-        left: calc(1vw + 15px);
-        box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    .hole2 {
-        height: 30px;
-        width: 30px;
-        background-color: #FCF6CD;
-        border-radius: 100%;
-        z-index: 1;
-        position: absolute;
-        top: 500px;
-        left: calc(1vw + 15px);
-        box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    .redlines {
-        pointer-events: none;
-        z-index: 1;
-        width: 95vw;
-        height: calc(100% - 20px);
-        position: absolute; 
-        bottom: 0;
-        margin-left: calc(100vw * 0.02);
-        margin-right: calc(100vw * 0.02);  
-        background: linear-gradient(to right, rgba(0,0,0,0) 8%,#FF516E 8.1%,rgba(0,0,0,0) 8.2%,rgba(0,0,0,0) 9%,#FF516E 9.1%,rgba(0,0,0,0) 9.2%,rgba(0,0,0,0) 100%);
-    }
-
-    h2 {
-        background: white;
-        width: 100%;
-        height: 50px;
-        text-align: left;
-        padding-left: calc(10px + 10vw);
-        padding-top: 50px; 
-        margin: 0;
-        font-size: 48px;
-        font-family: 'Caveat Brush', cursive;
-    }
-
-    h2 + p {
-        text-align: left;
-        margin-left: calc(10px + 10vw);
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 30.4px;
-    }
-
-    .paper {
-        background: repeating-linear-gradient(rgb(255,255,255), rgb(255,255,255) 0px,rgb(204, 241, 254) 1px, rgb(255,255,255) 2px,rgb(255,255,255) 30px);    
-        background-attachment: local;
-        box-shadow: 4px 4px 18px 7px rgba(0,0,0,0.2);
-    }
-
-    #tape1 {
-        top: 135px;
-        left: calc((100vw - 100px)/2);
-        transform: rotateZ(-1deg);
-    }
-
-    #tape3 {
-        top: 135px;
-        left: 45vw;
-        transform: rotateZ(3deg);        
-    }  
-
-
-    #polaroid {
-        float: right;
-        margin-right: 8vw;
-        transform: rotateZ(5deg);
-        width: 336px;
-        height: 403px;
-        box-shadow: 4px 4px 18px 7px rgba(0,0,0,0.2);
-        background-color: white;
-    }
-
-    #polaroid p {
-        font-family: 'Caveat Brush', cursive;
-        font-size: 24px;
-        margin: 0;
-    }
-
-    #polaroidpic {
-        width: 297.6px;
-        height: 297.6px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-    }
-
-    #about {
-        width: calc(70vw - 400px);
-        line-height: 26px;
-        font-size: 18px;
-        margin: 50px 40px;
-        margin-left: calc(10px + 10vw);
-    }
-
-    #hello {
-        font-size: 26px;
-        font-weight: bold;
-    }  
-
-    #tape4 {
-        top: 80px;
-        right: calc(12vw + 50px);
-        transform: rotateZ(9deg);
-    }
-
-/*//////////////////BIG SCREEN Resume section///////////////////*/
-
-    .location, .dates {
-        float: right;
-    }
-
-    .title, .resume {
-        clear: left;
-        float: left;
-    }
-
-    .bigbr {
+@media only screen and (max-width: 599px) {
+    #picture {
         display: none;
     }
+
+    #text {
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    header {
+        padding: 0 20px;
+        height: 170px;
+        padding-right: 45px;
+    }
+
+    main {
+        padding: 40px 9px;
+    }
+
 }

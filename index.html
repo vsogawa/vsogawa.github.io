@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Viviana Ogawa</title>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,134 +13,100 @@
 
 <body>
     <header>
-        <img id = "logo" src = "https://vsogawa.github.io/img/vo_logo_150x100.png" alt="logo">
-        <h1>Viviana Ogawa</h1>
-        <div id = "iconList">
-            <a href = "mailto:vsogawa@gmail.com"><i class="fa fa-envelope-square icon"></i></a>
-            <a href="https://www.linkedin.com/in/vsogawa" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
-            <a href="https://github.com/vsogawa" target="_blank"><i class="fa fa-github-square icon"></i></a>
+        <div id="picture"></div>
+        <div id="text">
+            <h1>Viviana Ogawa</h1>
+            <h2>Front-end Engineer</h2>
         </div>
     </header>
-    <nav>
-        <span class="foldertab folderbehind" id="tab4"><p>About Me</p></span>        
-        <span class="foldertab folderbehind" id="tab3"><p>Resume</p></span>
-        <span class="foldertab folderbehind" id="tab2"><p>Project 2</p></span>
-        <span class="foldertab folderactive" id="tab1"><p>Project 1</p></span>       
-    </nav>
 
-    <main id = "container">
-        <div id = "foldercover" class="cover"><p><span>Candidate File: </span><span id="name"> Viviana Ogawa</span></p></div>
-
-
-        <!--/////////////////////ABOUT ME PAGE CONTENT/////////////////////-->                                                            
-        <div class="tab inactive" id="page4">
-            <div class="paper">
-            <div class="hole"></div>
-            <div class="hole2"></div>
-                <h2>About Me</h2>
-                <div id="polaroid"><img src="https://vsogawa.github.io/img/king.png" id=polaroidpic><p>Nice to meet you!<p><p>~ Viviana</p></div>
-                <p id="about"><span id="hello">Hello!</span> I am a front-end web developer based in Palo Alto, California. I am currently enrolled in Udacity's front end web development nanodegree program and am expecting course completion by June 2018.  <br><br>Looking forward to speaking with you soon!</p>
-                 <div class="tape" id="tape4"></div>
-            </div>
-            <div class="redlines"></div>            
-        </div>        
-
-        <!--/////////////////////RESUME PAGE CONTENT/////////////////////-->                                                            
-        <div class="tab inactive" id="page3">
-            <div class="paper">
-            <div class="hole"></div>
-            <div class="hole2"></div>                                                            
-                <h2>Resume</h2>
-                <div id = "iconList2">
-                    <a href = "mailto:vsogawa@gmail.com"><i class="fa fa-envelope-square icon"></i></a>
-                    <a href="https://www.linkedin.com/in/vsogawa" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
-                    <a href="https://github.com/vsogawa" target="_blank"><i class="fa fa-github-square icon"></i></a>
+    <main>
+        <ul id="grid" class="clear">
+            <li class="unshifted">
+                <div class="hexagon toflip blue">
+                    <div class="container">
+                        <div class="front">Languages</div>
+                        <div class="back">HTML5, CSS3, JavaScript</div>
+                    </div>
                 </div>
-                    <div id = "resume">
-                    <span class = "title color-change">Udacity Google Developer Challenge Scholarship</span><br class = "bigbr">
-                    <span class = "dates">October 2017 - February 2018</span><br class = "smallbr">
-                    <ul class = "bullets">
-                        <li><span>Proficient in HTML/CSS syntax and responsive design</span></li>
-                        <li><span>Proficient in Javascript and jQuery</span></li>
-                        <li><span>Selected as part of the top 10% of challenge course participants to receive a scholarship to Udacity's Front End Developer Nanodegree program</span></li>
-                    </ul>
-
-                    <span class = "title color-change">Pharmaceutical Manufacturing Consultant</span><br class = "bigbr">
-                    <span class = "dates">January 2017 - January 2018</span><br class = "smallbr">
-                    <span class = "resume">Shire</span><br class = "bigbr">
-                    <span class = "location">Amsterdam, Netherlands</span><br>
-                    <ul class = "bullets">
-                        <li><span>Improve production compliance and cGMP with contract manufacturer Sanquin Plasma Products (SPP) to ensure fulfillment goals and project deadlines are met</span></li>
-                        <li><span>Refine and improve equipment and processes through kaizens</span></li>
-                        <li><span>Own event investigations as manufacturing subject matter expert</span></li>
-                    </ul>
-                    
-                    <span class = "title color-change">Manufacturing Associate / Supervisor</span><br class = "bigbr">
-                    <span class = "dates">June 2013 - January 2017</span><br>
-                    <span class = "resume">Baxter / Baxalta</span><br class = "bigbr">
-                    <span class = "location">Los Angeles, California</span><br class = "smallbr">
-                    <ul class = "bullets">
-                        <li><span>Supervise team of manufacturing operators for day-to-day production of parenteral drug products</span></li>
-                        <li><span>Lead scheduling, staffing, regulatory compliance, and audit activities</span></li>
-                        <li><span>Manage projects and lead cross-functional teams to complete process initiatives around safety, yield, and compliance improvement</span></li>
-                        <li><span>Act as primary point of contact for manufacturing startup qualification activities for process validation and equipment validation contractors and employees</span></li>                
-                    </ul>
-                    
-                    <span class = "title color-change">Webmaster/Publicist</span><br class = "bigbr">
-                    <span class = "dates">August 2013 - July 2015</span><br class = "smallbr">
-                    <span class = "resume">University of California, Los Angeles</span><br class = "bigbr">
-                    <span class = "location">Los Angeles, California</span><br>
-                    <ul class = "bullets">
-                        <li><span>Managed official UCLA Bioengineering Department website</span></li>
-                        <li><span>Created departmental communications including newsletters, flyers, poster boards, and graphics for print and online media</span></li>
-                    </ul>
+            </li>
+            <li class="unshifted">
+                <div class="hexagon project">
+                    <a href="https://readms.net/" target="_blank"><img src="https://static.giantbomb.com/uploads/square_small/0/6530/208835-animal_crossing_logo.gif">
+                    <p class="show">Some text about my super cool project</p></a>
                 </div>
-            <br><br><br>
-            </div>
-            <div class="redlines"></div>            
-        </div>
-
-        <!--/////////////////////PROJECT 2 PAGE CONTENT/////////////////////-->                                                          
-        <div class="tab inactive" id="page2">
-            <div class="paper">
-            <div class="hole"></div>
-            <div class="hole2"></div>                                                                                                                
-                <h2>Featured Project - Matching Game</h2>
-                <p><div class="center"><a href="http://htmlpreview.github.io/?https://github.com/vsogawa/Matching-game/blob/master/index.html" target="_blank"><img id = "project1pic" class = "project-image" src = "https://vsogawa.github.io/img/memorygame.png" alt = "memorygame"></a></div></p>
-
-                <p id = "project1text" class = "projectdescription">Udacity Front-end development nanodegree project featuring pair-finding web application game. Javascript and jQuery demonstration with functions, loops, and conditionals.</p>
-                <div class="tape" id="tape3"></div>
-            <br><br><br>
-            </div>
-            <div class="redlines"></div>                
-        </div>
-
-
-        <!--/////////////////////PROJECT 1 PAGE CONTENT/////////////////////-->                                                            
-        <div class="tab active" id="page1">
-            <div class="paper">
-            <div class="hole"></div>
-            <div class="hole2"></div>               
-                <h2>Featured Project - Pixel Art Maker</h2>
-                <p><div class="center"><a href="https://htmlpreview.github.io/?https://github.com/vsogawa/Pixel-Art-Maker/blob/master/index.html" target="_blank"><img id = "project2pic" class = "project-image" src = "https://vsogawa.github.io/img/helloworld.png" alt = "helloworld"></a></div></p>
-                <div class="arrow"><p>Click me! :)</p>
-                <img src="https://vsogawa.github.io/img/undo.svg" id="arrow1"></div>
-
-                <p id = "project2text" class = "projectdescription">Udacity Front-end development nanodegree project featuring a painting web application. Javascript and jQuery demonstration with functions, loops, and conditionals.</p>
-                <div class="tape" id="tape1"></div>
-            <br><br><br>
-            </div>
-
-            <div class="redlines"></div>
-        </div>                
+            </li>
+            <li class="unshifted">
+                <div class="hexagon toflip blue">
+                    <div class="container">
+                        <div class="front">Frameworks / Libraries</div>
+                        <div class="back">jQuery, Bootstrap, Jasmine, SASS, React</div>
+                    </div>
+                </div>
+            </li>
+            <li class="shifted">
+                <div class="hexagon project">
+                    <a href="https://readms.net/" target="_blank"><img src="https://vignette.wikia.nocookie.net/fairytail/images/a/a1/Frosch_anime_square.png/revision/latest?cb=20121012030551">
+                    <p class="show">Some text about my super cool project</p></a>
+                </div>
+            </li>
+            <li class="shifted">
+                <div class="hexagon toflip blue">
+                    <div class="container">
+                        <div class="front">Certification</div>
+                        <div class="back">Udacity<br>Front-End Web Developer Nanodegree</div>
+                    </div>
+                </div>
+            </li>
+            <li class="shifted">
+                <div class="hexagon project">
+                    <a href="https://readms.net/" target="_blank"><img src="https://atthebuzzerpodcast.files.wordpress.com/2017/07/fe-echoes-fav-character-list-cover-pic.jpg?w=1919&h=768&crop=1">
+                    <p class="show">Some text about my super cool project</p></a>
+                </div>
+            </li>
+            <li class="unshifted">
+                <div class="hexagon toflip blue">
+                    <div class="container">
+                        <div class="front">Education</div>
+                        <div class="back">UCLA Bioengineering 2013</div>
+                    </div>
+                </div>
+            </li>
+            <li class="unshifted">
+                <div class="hexagon project">
+                    <a href="https://readms.net/" target="_blank"><img src="http://www.animal-crossing.com/assets/img/home/ac-pocket-camp.jpg">
+                    <p class="show">Some text about my super cool project</p></a>
+                </div>
+            </li>
+            <li class="unshifted">
+                <div class="hexagon project">
+                    <a href="https://readms.net/" target="_blank"><img src="https://i.amz.mshcdn.com/YnDFaO2w-dUp_T2rkamVsKbRwWQ=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F842723%2F9071a1f4-54aa-4b39-bf34-26235487e2b6.jpg">
+                    <p class="show">Some text about my super cool project</p></a>
+                </div>
+            </li>
+            <li class="shifted">
+               <a href="mailto:vsogawa@gmail.com">
+                <div class="hexagon blue">
+                    <i class="fa fa-envelope icon"></i>
+                </div></a>
+            </li>
+            <li class="shifted">
+               <a href="https://www.linkedin.com/in/vsogawa" target="_blank">
+                <div class="hexagon blue">
+                    <i class="fa fa-linkedin icon"></i>
+                </div></a>
+            </li>
+            <li class="shifted">
+                <a href="https://github.com/vsogawa" target="_blank"><div class="hexagon blue">
+                    <i class="fa fa-github icon"></i>
+                </div></a>
+            </li>
+        </ul>
     </main>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/designs.js"></script>
 </body>
+
 </html>
-
-
-
-
-
