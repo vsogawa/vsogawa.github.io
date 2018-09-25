@@ -1,0 +1,135 @@
+* {
+    font-family: "Quicksand";
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fffae8;
+}
+
+input {
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    border: 2px dashed darkorange;
+}
+
+table {
+    margin: auto;
+}
+
+.labels {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.randomRow {
+    text-align: left;
+    width: 10vw;
+}
+
+.missing {
+    border: 2px solid #bf3030;
+    background-color: #ffb0b0;
+}
+
+.row {
+    height: 40px;
+}
+
+button {
+    margin: 30px;
+    margin-top: 15px;
+    font-family: "arial black";
+    font-weight: 500;
+    background-color: darkorange;
+    border: none;
+    border-bottom: 3px solid rgb(186, 79, 0);
+    border-right: 3px solid rgb(186, 79, 0);
+    border-radius: 10px;
+    height: 32px;
+    width: 140px;
+    color: black;
+    text-shadow: 2px 2px rgb(255, 210, 178);
+}
+
+.random {
+    margin: 0;
+    font-family: "quicksand";
+    font-weight: 700;
+    background-color: #ffda60;
+    position: relative;
+    border-color: #ffda60;
+    margin-left: 18px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 110px;
+}
+
+.random:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border-width: 16px;
+    border-style: solid;
+    border-color: inherit;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+#submit {
+    margin-top: 30px;
+    font-size: 20px;
+    height: 40px;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    border: none;
+    background-color: #eb8100;
+}
+
+.random:active {
+    border-color: #eab816;
+    background-color: #eab816;
+}
+
+@media (max-width: 500px) {
+    
+    input {
+        width: 45vw;
+        margin-left: -160px;
+        
+
+    }
+    
+    td {
+        display: block;
+    }
+    
+    .random {
+        position: absolute;
+        right: 10vw;
+        transform: translateY(-28px);
+    }
+    
+    .labels {
+        text-align: left;
+        margin-left: -40vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
